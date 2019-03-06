@@ -5,7 +5,7 @@ import { connect } from 'react-redux';
 import {RegisterChanged} from '../Actions'
 import LinearGradient from 'react-native-linear-gradient'
 import strings from './Localizations'
-import {RadioForm,RadioButton,RadioButtonInput,RadioButtonLabel} from 'react-native-simple-radio-button'
+
 
 
 export default class SignUpSecondScreen extends React.Component {
