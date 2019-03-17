@@ -6,26 +6,28 @@ import { Card, CardItem, Text, Icon, Left, Body, Button, Thumbnail, Right, Conte
 export default class FoodyListItem extends Component {
   render() {
     return (
-      <Content style={{ marginTop: '1%', marginLeft: '1%', marginRight: '1%', flex: 1 }}>
+      <Content style={{ marginTop: '5%', marginLeft: '1%', marginRight: '1%', flex: 1 }}>
 
-        <Thumbnail style={{ position: "absolute" }} source={require('../src/listimage.png')} />
 
-        <Card style={{ flex: 0, marginLeft: '6%', zIndex: -1, borderRadius: 8 }}>
+        <Card style={{ flex: 0, marginLeft: '6%', borderRadius: 8 }}>
 
           <CardItem style={{ marginLeft: 25, borderTopLeftRadius: 8, borderTopRightRadius: 8 }}>
+          <Thumbnail style={{ position:'absolute', top:-5, marginLeft:-40,  width: 50, height: 50, borderRadius: 50/2}} size={10} source={require('../src/listimage.png')} />
+
             <Body >
+
               {/* <Image source={{uri: 'Image URL'}} style={{height: 200, width: 200, flex: 1}}/> */}
               <View style={{flexDirection:'row'}}>
                   <View>
-                <Text>
+                <Text style={{fontSize:12}}>
                   Kullanici Adi
 
                 </Text>
                 <View style={{flexDirection:'row'}}>
-                <Icon name="time" type="Ionicons" style={{fontSize:15,marginTop:3}} >
+                <Icon name="time" type="Ionicons" style={{fontSize:15,marginTop:3,color:'#ccc'}} >
                 
                 </Icon>
-                <Text style={{ fontSize: 10,marginTop:5,marginLeft:'2%'}}>
+                <Text style={{ fontSize: 8,marginTop:5,marginLeft:'2%', color:'#ccc'}}>
                   24 saat once
                 </Text>
               </View>
@@ -55,18 +57,17 @@ export default class FoodyListItem extends Component {
             </Right> */}
 
           </CardItem>
-          <Item style={{ borderColor: '#898888' ,flex:1,marginBottom:20,marginLeft:40}} />
+          <Item style={{ borderColor: '#e1e1e1' ,flex:1,marginBottom:10,marginLeft:40}} />
 
           <View style={{ flexDirection: 'row', marginLeft: '4%', marginRight: '1%' }}>
 
             <TouchableOpacity>
-              <Icon name="pin" />
+              <Icon name="pin" style={{fontSize:22}} />
             </TouchableOpacity>
             <View style={{ marginLeft: 10 }}>
-              <Text style={{ fontSize: 18 }}>Konum bilgisi</Text>
-              <Text style={{ color: '#474747', fontSize: 15, marginRight: '10%' }}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac sollicitudin libero, nisl orci viverra
-
+              <Text style={{ fontSize: 14 }}>Bornova/İzmir</Text>
+              <Text style={{ color: '#474747', fontSize: 11, marginRight: '10%' }}>
+                Merhaba öğlen yemeğinde buradayım, 2 kişiyle paylaşabilirim.
 
                 </Text>
 
@@ -74,8 +75,8 @@ export default class FoodyListItem extends Component {
 
           </View>
 
-          <Image style={{ marginLeft: 35, marginRight: 10, height: 200, width: null, flex: 1, borderRadius: 8, marginTop: '2%' }} source={require('../src/yeni.png')} />
-          {/* <View style={{flexDirection:'row',marginLeft:35,marginTop:5}}>
+            {/*<Image style={{ marginLeft: 35, marginRight: 10, height: 100, flex: 1, borderRadius: 8, marginTop: '2%' }} source={require('../src/yeni.png')} />
+        <View style={{flexDirection:'row',marginLeft:35,marginTop:5}}>
               <Icon name="time" type="Ionicons" style={{fontSize:25}} >
                 
                 </Icon>
@@ -97,22 +98,22 @@ export default class FoodyListItem extends Component {
               </View> */}
           <CardItem style={{ borderBottomLeftRadius: 8, borderBottomRightRadius: 8 }}>
               <Left>
-              <Icon name="time" type="Ionicons" style={{fontSize:25,marginLeft:20}} >
+              <Icon name="time" type="Ionicons" style={{fontSize:20,marginLeft:20}} >
                 
                 </Icon>
-                <Text style={{ fontSize: 10,marginTop:7,marginLeft:'2%',marginBottom:10}}>
+                <Text style={{ fontSize: 10,marginTop:7,marginLeft:'2%',color:'#333',marginBottom:10}}>
                   07.02.19 | Persembe
                 </Text>
               </Left>
               <Right>
                 <View style={{flexDirection:'row'}}>
-              <Icon name="heart-outline" type='MaterialCommunityIcons' style={{fontSize:30,marginRight:'10%'}} >
+              <Icon name="heart-outline" type='MaterialCommunityIcons' style={{fontSize:22,marginRight:'8%'}} >
 
                 </Icon>
-                <Icon name="comment-outline" type="MaterialCommunityIcons" style={{fontSize:30,marginRight:'10%'}} >
+                <Icon name="comment-outline" type="MaterialCommunityIcons" style={{fontSize:22,marginRight:'8%'}} >
                 
                 </Icon>
-                <Icon name="share" type="MaterialCommunityIcons" style={{fontSize:30}} >
+                <Icon name="share" type="MaterialCommunityIcons" style={{fontSize:22}} >
                 
                 </Icon>
                 </View>

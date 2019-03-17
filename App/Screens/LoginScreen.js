@@ -208,9 +208,11 @@ _postLogin=async({email,surname,name})=>{
     return (
 
       <Container style={{ flex:1}}>
-  <Image style={{ width:'100%'}} source={require('../src/LoginScreen/Vector.png')} />
+  <Image style={{ position:'absolute',marginTop:34.54,  width:'100%'}} source={require('../src/LoginScreen/Vector1.png')} />
 
 <Image style={{ position:'absolute',marginTop:7.65,  width:'100%'}} source={require('../src/LoginScreen/Vector2.png')} />
+<Image style={{ width:'100%'}} source={require('../src/LoginScreen/Vector.png')} />
+
 <KeyboardAwareScrollView>
 <View style={{alignItems:'center'}}>
   <Text  style={{color:'#4C2BDC',marginTop:'4%',fontFamily:'QuickSand',fontWeight:'bold',fontSize:25}}>

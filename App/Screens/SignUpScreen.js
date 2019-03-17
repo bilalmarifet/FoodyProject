@@ -100,7 +100,8 @@ return (<Spinner size="small"/>);
         <Image style={{ width:'100%'}} source={require('../src/LoginScreen/Vector.png')} />
 
          <Image style={{ position:'absolute',marginTop:7.65,  width:'100%'}} source={require('../src/LoginScreen/Vector2.png')} />
- 
+         <Image style={{ position:'absolute',marginTop:7.65,  width:'100%'}} source={require('../src/LoginScreen/Vector1.png')} />
+
           <View style={{marginTop:'5%'}}></View>
           <KeyboardAwareScrollView style={{  flex: 0.45, paddingTop: '5%', paddingLeft: '5%', paddingRight: '5%' }}>
 
