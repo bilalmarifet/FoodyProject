@@ -5,11 +5,9 @@ import { connect } from 'react-redux';
 import {RegisterChanged,RegisterSecondStepClick} from '../Actions'
 import LinearGradient from 'react-native-linear-gradient'
 import strings from './Localizations'
-<<<<<<< HEAD
 
-=======
 import Spinner from 'react-native-loading-spinner-overlay';
->>>>>>> bilalmarifet/master
+
 
 
 class SignUpSecondScreen extends React.Component {

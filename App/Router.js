@@ -120,9 +120,9 @@ const TabNavigator = createBottomTabNavigator({
   );
 
 export const SwitchNavigator = createSwitchNavigator({
-  //  Home:HomeStack,
- SignUp:SignUpScreen,
+  // Home:HomeStack,
   AuthLoading:AuthLoadingScreen,
+  SignUp:SignUpScreen,
   Login: LoginStack,
   App: TabNavigator
   

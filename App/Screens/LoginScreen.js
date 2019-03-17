@@ -144,7 +144,7 @@ borderWidth:1
       );
     }
   };
-
+asdsadasdasda
   _signIn() {
     const { username, password } = this.props;
     this.props.LoginMember({ username, password });
@@ -256,17 +256,9 @@ _postLogin=async({email,surname,name})=>{
   </Text>
   <Text style={{fontSize:16,marginTop:'2%',color:'#4C2BDC',fontFamily:'QuickSand'}}>
     Hemen Giris Yapiniz
-  </Text>
-
-       
-
-
-        
-  
-
-  
+  </Text>  
   </View>
-  <View style={{marginTop:'10s%'}}>
+  <View style={{marginTop:'10%'}}>
   </View>
               {this.renderUsernameText()}
               <View style={{marginTop:'10%'}}/>
@@ -274,7 +266,7 @@ _postLogin=async({email,surname,name})=>{
               
                 {this.renderInfoText()}
 
-              {this.renderSpinner()}
+              
               <View style={{marginTop:'10%'}}>
 
 </View>
