@@ -4,7 +4,7 @@ import {Container,Header,Title,Content,Button,Left,Right,Body,Icon,Text} from 'n
 import { navigate } from '../Services/Navigator';
 import { createStackNavigator, createAppContainer } from 'react-navigation';
 import FoodyListItem  from '../Component/FoodyListItem'
-import TabItem from '../Component/TabItem'
+import Tabitem2 from '../Component/Tabitem2'
 export default class HomeScreen extends React.Component {
   _signOutAsync = async () => {
     await AsyncStorage.clear();
@@ -34,9 +34,9 @@ export default class HomeScreen extends React.Component {
         <Content>
         <ScrollView horizontal>
        
-       <TabItem />   
-       <TabItem/>  
-       <TabItem/>  
+       <Tabitem2 />   
+       <Tabitem2/>  
+       <Tabitem2/>  
        
    </ScrollView>
         <ScrollView style={{flex:1,marginTop:5}} >
