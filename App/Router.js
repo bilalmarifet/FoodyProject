@@ -121,8 +121,9 @@ const TabNavigator = createBottomTabNavigator({
 
 export const SwitchNavigator = createSwitchNavigator({
   //  Home:HomeStack,
+    AuthLoading:AuthLoadingScreen,
  SignUp:SignUpScreen,
-  AuthLoading:AuthLoadingScreen,
+
   Login: LoginStack,
   App: TabNavigator
   
