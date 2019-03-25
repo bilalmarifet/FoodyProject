@@ -34,9 +34,7 @@ export default class HomeSecond extends React.Component {
         </Header>
         <Content style={{flex:1}}>
         <View>
-       
           <ScrollView horizontal>
-       
         <TabItem/>   
         <TabItem/>  
         <TabItem/>  

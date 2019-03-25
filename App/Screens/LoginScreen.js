@@ -206,7 +206,6 @@ _postLogin=async({email,surname,name})=>{
   
   render() {
     return (
-
       <Container style={{ flex:1}}>
 
   <Image style={{ position:'absolute',marginTop:34.54,  width:'100%'}} source={require('../src/LoginScreen/Vector1.png')} />

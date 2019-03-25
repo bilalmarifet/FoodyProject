@@ -31,6 +31,7 @@ class SignUpScreen extends React.Component {
     if(this.props.name!='' && this.props.email!='' && this.props.password!='' && this.props.surname!='' && this.props.password.length>5){
       if(this.props.spinner){
 
+
 return (
 <Button onPress={this._registerFirstStep.bind(this)} style={{borderRadius:5,backgroundColor:'#4C2BDC',justifyContent:'center',marginLeft:'10%',
         shadowColor: "#000",
@@ -49,13 +50,12 @@ return (
               <Spinner color='#fff'  style={{marginLeft:5,marginRight:5,size:15}}/>
             </Button>
 
-
-
 );
       }
       else{
       return (
         <Button  onPress={this._registerFirstStep.bind(this)} style={{borderRadius:5,backgroundColor:'#4C2BDC',justifyContent:'center',marginLeft:'10%',
+
         shadowColor: "#000",
         shadowOffset: {
           width: 0,
