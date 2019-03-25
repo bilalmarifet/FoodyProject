@@ -3,6 +3,7 @@ package com.foody;
 import android.app.Application;
 
 import com.facebook.react.ReactApplication;
+
 import com.oblador.vectoricons.VectorIconsPackage;
 import com.babisoft.ReactNativeLocalization.ReactNativeLocalizationPackage;
 import com.BV.LinearGradient.LinearGradientPackage;
@@ -11,21 +12,18 @@ import com.facebook.reactnative.androidsdk.FBSDKPackage;
 import com.facebook.reactnative.androidsdk.FBSDKPackage;
 import com.babisoft.ReactNativeLocalization.ReactNativeLocalizationPackage;
 
+
 import com.oblador.vectoricons.VectorIconsPackage;
-
-import com.swmansion.gesturehandler.react.RNGestureHandlerPackage;
-
+import com.babisoft.ReactNativeLocalization.ReactNativeLocalizationPackage;
 import com.BV.LinearGradient.LinearGradientPackage;
-import com.oblador.vectoricons.VectorIconsPackage;
 import com.swmansion.gesturehandler.react.RNGestureHandlerPackage;
-
+import com.facebook.reactnative.androidsdk.FBSDKPackage;
 import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;
 import com.facebook.react.shell.MainReactPackage;
 import com.facebook.soloader.SoLoader;
 import com.facebook.CallbackManager;
 import com.facebook.FacebookSdk;
-import com.facebook.reactnative.androidsdk.FBSDKPackage;
 import com.facebook.appevents.AppEventsLogger;
 
 import java.util.Arrays;

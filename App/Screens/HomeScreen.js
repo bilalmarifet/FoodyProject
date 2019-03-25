@@ -17,14 +17,18 @@ export default class HomeScreen extends React.Component {
       return (
         
         <Container>
-        <Header>
+        <Header style={{backgroundColor:'rgba(196, 196, 196, 0.1)'}}>
           <Left>
             <TouchableOpacity onPress={()=>this._signOutAsync()}>
             <Icon name="playlist-add" type="MaterialIcons" />
             </TouchableOpacity>
           </Left>
           <Body>
+            
+
+
           </Body>
+
           <Right >
             <TouchableOpacity>
           <Icon  name="message" type="MaterialIcons" />
