@@ -7,7 +7,9 @@ import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view
 
 import LinearGradient from 'react-native-linear-gradient'
 import strings from './Localizations'
+
 import Spinner from 'react-native-loading-spinner-overlay';
+
 
 
 class SignUpSecondScreen extends React.Component {
