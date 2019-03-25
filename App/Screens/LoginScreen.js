@@ -108,7 +108,7 @@ renderInfoText(){
       );
     }
   };
-
+asdsadasdasda
   _signIn() {
     const { username, password } = this.props;
     this.props.LoginMember({ username, password });
@@ -219,6 +219,7 @@ _postLogin=async({email,surname,name})=>{
     Hosgeldin
   </Text>
   <Text style={{fontSize:16,marginTop:'2%',color:'#4C2BDC',fontFamily:'QuickSand'}}>
+
     Hemen Giriş Yap!
   </Text>
   </View>
@@ -232,8 +233,10 @@ _postLogin=async({email,surname,name})=>{
               
                 {this.renderInfoText()}
 
+
               {this.renderSpinner()}
               <View style={{marginTop:'5%'}}>
+
 
 </View>
               <Button onPress={this._signIn.bind(this)} style={{borderRadius:5,backgroundColor:'#4C2BDC',width:'80%',justifyContent:'center',marginLeft:'10%',

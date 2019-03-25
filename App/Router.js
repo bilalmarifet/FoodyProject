@@ -15,6 +15,7 @@ import FoodyScreen from './Screens/FoodyScreen';
 import SignUpThirdScreen from './Screens/SignUpThirdScreen'
 import HomeSecond from './Screens/HomeSecond'
 import RestourantDetailScreen from './Screens/RestourantDetailScreen'
+import ProfileSettingScreen from './Screens/ProfileSettingScreen'
 
 
 // export const RootStack = createStackNavigator(
@@ -73,12 +74,25 @@ const getTabBarIcon = (navigation, focused, tintColor) => {
   return <IconComponent name={iconName} size={25} color={tintColor} />;
 };
 
+const ProfileStack = createStackNavigator({
+  Profile:ProfileScreen,
+  Setting:ProfileSettingScreen,
+},
+{
+  headerMode: 'none',
+  navigationOptions: {
+    headerVisible: false,
+  }}
+);
+
+
+
 const TabNavigator = createBottomTabNavigator({
 
     Home: HomeStack,
     Details: DetailsScreen,
     Notification: NotificationScreen,
-    Profile: ProfileScreen,
+    Profile: ProfileStack,
    
   },
   {
@@ -120,9 +134,10 @@ const TabNavigator = createBottomTabNavigator({
   );
 
 export const SwitchNavigator = createSwitchNavigator({
-  //  Home:HomeStack,
-    AuthLoading:AuthLoadingScreen,
- SignUp:SignUpScreen,
+
+  // Home:HomeStack,
+  AuthLoading:AuthLoadingScreen,
+  SignUp:SignUpScreen,
 
   Login: LoginStack,
   App: TabNavigator

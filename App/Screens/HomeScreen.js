@@ -4,7 +4,7 @@ import {Container,Header,Title,Content,Button,Left,Right,Body,Icon,Text} from 'n
 import { navigate } from '../Services/Navigator';
 import { createStackNavigator, createAppContainer } from 'react-navigation';
 import FoodyListItem  from '../Component/FoodyListItem'
-import TabItem from '../Component/TabItem'
+import Tabitem2 from '../Component/Tabitem2'
 export default class HomeScreen extends React.Component {
   _signOutAsync = async () => {
     await AsyncStorage.clear();
@@ -17,14 +17,18 @@ export default class HomeScreen extends React.Component {
       return (
         
         <Container>
-        <Header>
+        <Header style={{backgroundColor:'rgba(196, 196, 196, 0.1)'}}>
           <Left>
             <TouchableOpacity onPress={()=>this._signOutAsync()}>
             <Icon name="playlist-add" type="MaterialIcons" />
             </TouchableOpacity>
           </Left>
           <Body>
+            
+
+
           </Body>
+
           <Right >
             <TouchableOpacity>
           <Icon  name="message" type="MaterialIcons" />
@@ -34,9 +38,9 @@ export default class HomeScreen extends React.Component {
         <Content>
         <ScrollView horizontal>
        
-       <TabItem />   
-       <TabItem/>  
-       <TabItem/>  
+       <Tabitem2 />   
+       <Tabitem2/>  
+       <Tabitem2/>  
        
    </ScrollView>
         <ScrollView style={{flex:1,marginTop:5}} >

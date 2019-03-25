@@ -16,6 +16,7 @@ export default class TabItem extends Component {
         <Card transparent style={{ backgroundColor:'transparent'}}>
               <CardItem style={{ backgroundColor: "transparent" ,borderTopLeftRadius: 8, borderTopRightRadius: 8}}>
                   <Left>
+
                   </Left>  
               </CardItem> 
               <CardItem style={{ backgroundColor: "transparent" }}>
