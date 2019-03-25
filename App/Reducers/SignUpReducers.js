@@ -1,4 +1,4 @@
-import {REGISTER_CHANGE,REGISTER_EVENT_SECOND_EMPTY,USER_SECOND_STEP_STARTED,REGISTER_FIRST_SUCCEED,REGISTER_CREATE,REGISTER_CREATE_SUCCESS,REGISTER_EVENT_EMPTY,REGISTER_CREATE_FAILED_EMAIL} from '../Actions/types'
+import {REGISTER_CHANGE,EMAIL_ERROR,REGISTER_EVENT_SECOND_EMPTY,USER_SECOND_STEP_STARTED,REGISTER_FIRST_SUCCEED,REGISTER_CREATE,REGISTER_CREATE_SUCCESS,REGISTER_EVENT_EMPTY,REGISTER_CREATE_FAILED_EMAIL} from '../Actions/types'
 
 
 
@@ -13,7 +13,8 @@ const INITIAL_STATE = {
     phoneNumber:'',
     City:'',
     phoneIsVerificated:false,
-    spinner:false
+    spinner:false,
+    isClicked:false
 
 
 
@@ -25,12 +26,14 @@ export default (state=INITIAL_STATE,action)=>{
         return {...state,[action.payload.props]:action.payload.value};
         break;
         case REGISTER_FIRST_SUCCEED:
-        return {...state,isEmpty:false};
+        return {...state,isEmpty:false,spinner:true};
         break;
         case REGISTER_EVENT_SECOND_EMPTY:
         return{...state,isEmpty:true}
         case USER_SECOND_STEP_STARTED:
         return{...state,spinner:true};
+        case EMAIL_ERROR:
+        return{...state,isClicked:true}
         default :
         return state
     }

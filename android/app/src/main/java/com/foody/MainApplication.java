@@ -3,6 +3,9 @@ package com.foody;
 import android.app.Application;
 
 import com.facebook.react.ReactApplication;
+import com.rnfs.RNFSPackage;
+import fr.bamlab.rnimageresizer.ImageResizerPackage;
+import com.imagepicker.ImagePickerPackage;
 import com.oblador.vectoricons.VectorIconsPackage;
 import com.babisoft.ReactNativeLocalization.ReactNativeLocalizationPackage;
 import com.BV.LinearGradient.LinearGradientPackage;
@@ -41,6 +44,9 @@ protected static CallbackManager getCallbackManager() {
    
 return Arrays.<ReactPackage>asList(
           new MainReactPackage(),
+            new RNFSPackage(),
+            new ImageResizerPackage(),
+            new ImagePickerPackage(),
             new VectorIconsPackage(),
             new ReactNativeLocalizationPackage(),
             new LinearGradientPackage(),
