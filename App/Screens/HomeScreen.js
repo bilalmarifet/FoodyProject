@@ -5,7 +5,8 @@ import {Container,Header,Title,Content,Button,Left,Right,Body,Icon,Text} from 'n
 import { navigate } from '../Services/Navigator';
 import { createStackNavigator, createAppContainer } from 'react-navigation';
 import FoodyListItem  from '../Component/FoodyListItem'
-import TabItem from '../Component/TabItem'
+
+import TabItem from '../Component/TabItem2'
 import {  EventHomeListData,LocationChanged} from '../Actions';
 import _ from 'lodash';
 
@@ -16,6 +17,7 @@ import _ from 'lodash';
     super(props);
   
   }
+
 
 
   _signOutAsync = async () => {
@@ -64,14 +66,18 @@ _keyExtractor = (item, index) => item.eventId;
 
       return (
         <Container>
-        <Header>
+        <Header style={{backgroundColor:'rgba(196, 196, 196, 0.1)'}}>
           <Left>
             <TouchableOpacity onPress={()=>this._signOutAsync()}>
             <Icon name="playlist-add" type="MaterialIcons" />
             </TouchableOpacity>
           </Left>
           <Body>
+            
+
+
           </Body>
+
           <Right >
             <TouchableOpacity>
           <Icon  name="message" type="MaterialIcons" />
@@ -81,9 +87,9 @@ _keyExtractor = (item, index) => item.eventId;
         <Content>
         <ScrollView horizontal>
        
-       <TabItem />   
-       <TabItem/>  
-       <TabItem/>  
+       <Tabitem2 />   
+       <Tabitem2/>  
+       <Tabitem2/>  
        
    </ScrollView>
    <FlatList

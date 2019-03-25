@@ -5,6 +5,7 @@ import LocalizedStrings from 'react-native-localization';
  
 let strings = new LocalizedStrings({
  "en-US":{
+   LoginWithFacebook:"Login with Facebook",
    signIn:"Sign In",
    signUp:"Sign Up",
    login:"Login",
@@ -21,7 +22,7 @@ let strings = new LocalizedStrings({
    man:"Man",
    woman:"Woman",
    sex:"Sex",
-   birthDate:'Birth Date',
+   birthDate:'Birth Dates',
    selectYourBirtDay: 'Select Your Birth Date',
    city:'City',
    phone:'Phone number',
@@ -31,11 +32,13 @@ let strings = new LocalizedStrings({
   phoneConfirmMessage:'Please Enter the Confirmation Code You Received',
   phoneConfirmButtonText:'Confirm',
   confirmCode:'Confirmation code',
-  phone:'+1 555 555 5555',
+  phone:'Phone',
+  choose:'Choose'
 
 
  },
  "en":{
+  LoginWithFacebook:"Login with Facebook",
     signIn:"Sign In",
     signUp:"Sign Up",
     email:"Email",
@@ -51,7 +54,7 @@ let strings = new LocalizedStrings({
    man:"Man",
    woman:"Woman",
    sex:"Sex",
-   birthDate:'Birth Date',
+   birthDate:'Birth Dates',
    selectYourBirtDay: 'Select Your Birth Date',
    city:'City',
     phone:'Phone number',
@@ -61,11 +64,13 @@ let strings = new LocalizedStrings({
   phoneConfirmMessage:'Please Enter the Confirmation Code You Received',
   phoneConfirmButtonText:'Confirm',
   confirmCode:'Confirmation code',
-  phone:'+1 555 555 5555',
+  phone:'Phone',
+  choose:'Choose'
 
 
   },
   "tr":{
+    LoginWithFacebook:"Facebook'la Giriş Yap",
     signIn:"Giriş Yap",
     signUp:"Üye Ol",
     email:"Email",
@@ -91,7 +96,8 @@ let strings = new LocalizedStrings({
    phoneConfirmMessage:'Lütfen Telefonunuza Gönderilen Onay Kodunu Giriniz',
    phoneConfirmButtonText:'Onayla',
    confirmCode:'Onay kodu',
-   phone:'+90 506 680 4389'
+   phone:'+90 506 680 4389',
+   choose:'Seçiniz'
 
 
 

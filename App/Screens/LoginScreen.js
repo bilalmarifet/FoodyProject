@@ -108,7 +108,7 @@ renderInfoText(){
       );
     }
   };
-
+asdsadasdasda
   _signIn() {
     const { username, password } = this.props;
     this.props.LoginMember({ username, password });
@@ -207,7 +207,9 @@ _postLogin=async({email,surname,name})=>{
   render() {
     return (
       <Container style={{ flex:1}}>
+
   <Image style={{ position:'absolute',marginTop:34.54,  width:'100%'}} source={require('../src/LoginScreen/Vector1.png')} />
+
 
 <Image style={{ position:'absolute',marginTop:7.65,  width:'100%'}} source={require('../src/LoginScreen/Vector2.png')} />
 <Image style={{ width:'100%'}} source={require('../src/LoginScreen/Vector.png')} />
@@ -218,6 +220,7 @@ _postLogin=async({email,surname,name})=>{
     Hosgeldin
   </Text>
   <Text style={{fontSize:16,marginTop:'2%',color:'#4C2BDC',fontFamily:'QuickSand'}}>
+
     Hemen Giriş Yap!
   </Text>
   </View>
@@ -231,8 +234,10 @@ _postLogin=async({email,surname,name})=>{
               
                 {this.renderInfoText()}
 
+
               {this.renderSpinner()}
               <View style={{marginTop:'5%'}}>
+
 
 </View>
               <Button onPress={this._signIn.bind(this)} style={{borderRadius:5,backgroundColor:'#4C2BDC',width:'80%',justifyContent:'center',marginLeft:'10%',
@@ -273,7 +278,29 @@ _postLogin=async({email,surname,name})=>{
 </View>
 
 <View style={{alignItems:'center'}}>
-<LoginButton onPress={this.handleFacebookLogin.bind(this)} />
+
+
+{/* <LoginButton onPress={()=>this.handleFacebookLogin.bind(this)} /> */}
+
+
+
+<Button onPress={this.handleFacebookLogin.bind(this)} style={{borderRadius:5,backgroundColor:'#3B5998',width:'80%',justifyContent:'center',marginLeft:'10%',
+        shadowColor: "#000",
+        shadowOffset: {
+          width: 0,
+          height: 4,
+        },
+        shadowOpacity: 0.32,
+        shadowRadius: 5.46,
+        
+        elevation: 9,
+        borderWidth:1}}>
+        <Icon name='logo-facebook'  />
+              <Text style={{fontFamily:'QuickSand',alignContent:"center"}}>
+
+              </Text>
+
+            </Button>
 </View>
 </KeyboardAwareScrollView>
 
@@ -294,8 +321,8 @@ const styles = StyleSheet.create({
     borderRadius:5,
     marginLeft:'7%',
     marginRight:'7%',
-    height:'10%'
-    ,
+    height:'10%',
+    marginTop:10,
     borderWidth:1
 
   },

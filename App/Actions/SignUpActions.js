@@ -1,4 +1,4 @@
-import { REGISTER_CHANGE, REGISTER_CREATE, REGISTER_CREATE_SUCCESS, USER_SECOND_STEP_STARTED,REGISTER_FIRST_SUCCEED,REGISTER_EVENT_SECOND_EMPTY,REGISTER_EVENT_EMPTY, REGISTER_CREATE_FAILED_EMAIL } from './types'
+import { REGISTER_CHANGE, EMAIL_ERROR,REGISTER_CREATE, REGISTER_CREATE_SUCCESS, USER_SECOND_STEP_STARTED,REGISTER_FIRST_SUCCEED,REGISTER_EVENT_SECOND_EMPTY,REGISTER_EVENT_EMPTY, REGISTER_CREATE_FAILED_EMAIL } from './types'
 import { navigate } from '../Services/Navigator';
 import { AsyncStorage,Alert } from 'react-native';
 import {SIGN_UP_SERVICE_URL,SIGN_UP_EMAIL_CHECK_SERVICE_URL} from '../ApiConstants';
@@ -17,11 +17,25 @@ export const RegisterChanged = ({ props, value }) => {
 
 
 export const RegisterFirstStepClick = ({ name, surname, password, email }) => {
-   
+
+    let regEmail = /^\w+([\.-]?\w+)@\w+([\.-]?\w+)(\.\w{2,3})+$/ ;
+
         return (dispatch) => {
-            dispatch({
-                type: REGISTER_FIRST_SUCCEED
-            });
+
+                if(!regEmail.test(email)){
+                    dispatch({
+                        type:EMAIL_ERROR
+                    })
+                }
+                else
+            {
+                dispatch({
+                    type: REGISTER_FIRST_SUCCEED
+                });
+
+                
+            
+            
        
    
        
@@ -54,7 +68,7 @@ export const RegisterFirstStepClick = ({ name, surname, password, email }) => {
             }
         });
 
-
+    }
        
     };
 }
