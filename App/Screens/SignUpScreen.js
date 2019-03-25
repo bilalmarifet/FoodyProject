@@ -33,11 +33,28 @@ class SignUpScreen extends React.Component {
   renderButton(){
     if(this.props.name!='' && this.props.email!='' && this.props.password!='' && this.props.surname!='' && this.props.password.length>5){
       if(this.props.spinner){
-return (<Spinner size="small"/>);
+return (
+  <Button onPress={this._registerFirstStep.bind(this)} style={{borderRadius:5,backgroundColor:'#4C2BDC',width:'40%',justifyContent:'center',marginLeft:'10%',
+  shadowColor: "#000",
+  shadowOffset: {
+    width: 0,
+    height: 4,
+  },
+  shadowOpacity: 0.32,
+  shadowRadius: 5.46,
+  
+  elevation: 9,
+  borderWidth:1}}>
+        <Text style={{fontFamily:'QuickSand',alignContent:"center"}}>
+        {strings.continue}
+        </Text>
+        <Spinner size="small"/>
+      </Button>
+);
       }
       else{
       return (
-        <Button onPress={this._registerFirstStep.bind(this)} style={{borderRadius:5,backgroundColor:'#4C2BDC',width:'20%',justifyContent:'center',marginLeft:'10%',
+        <Button onPress={this._registerFirstStep.bind(this)} style={{borderRadius:5,backgroundColor:'#4C2BDC',width:'40%',justifyContent:'center',marginLeft:'10%',
         shadowColor: "#000",
         shadowOffset: {
           width: 0,

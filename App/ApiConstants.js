@@ -17,4 +17,5 @@ userId,userName,token,isSucess,message
 
 export const LOGIN_FACEBOOK_SERVICE_URL= BASEWEBAPI+'/user/facebookLogin';
 export const WEB_TOKEN = BASEWEBAPI+'/token';
+export const EVENT_GET_HOME_URL=BASEWEBAPI+"/event/GetEventListReceiver"
 
