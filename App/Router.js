@@ -135,7 +135,7 @@ const TabNavigator = createBottomTabNavigator({
 
 export const SwitchNavigator = createSwitchNavigator({
 
-  sign:SignUpSecondScreen,
+ new:NewScreen,
     AuthLoading:AuthLoadingScreen,
  SignUp:SignUpScreen,
 
